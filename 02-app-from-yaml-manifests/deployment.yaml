@@ -6,7 +6,7 @@ metadata:
     section: intro
 spec:
   # modify replicas according to your case
-  replicas: 15
+  replicas: 2
   # strategy -- 
   selector:
     matchLabels: #<- Must match labels of Pod
