@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample
+  labels:
+    section: intro
+spec:
+  # modify replicas according to your case
+  replicas: 15
+  # strategy -- 
+  selector:
+    matchLabels: #<- Must match labels of Pod
+      app: sample 
+  template:
+  # pod definition
+    metadata:
+      name: sample
+      labels:
+        app: sample
+    spec:
+      containers:
+      - name: app
+        image: abdennour/sample-app:blue # v1, v2, blue, green
+        ports:
+        - containerPort: 80
