@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: abdennour/sample-app:green# v1, v2, blue, green
+        image: abdennour/sample-app:green 
         ports:
         - containerPort: 80
