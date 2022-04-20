@@ -10,5 +10,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80  # <--- mapped to containerPort of Pod
-      nodePort: 30201
+      nodePort: 30202
   type: NodePort
